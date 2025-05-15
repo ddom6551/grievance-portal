@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marian's Grievance Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Your Grievance Portal, Marian!</h1>
+    <!-- Optional: Add a picture -->
+    <!-- <img src="marian.jpg" alt="Marian" class="profile-pic"> -->
+    <form id="grievance-form">
+      <label>Title:<input type="text" id="title" required></label>
+      <label>What's bothering you?<textarea id="description" rows="4" required></textarea></label>
+      <label>Mood:<input type="range" id="mood" min="0" max="4"></label>
+      <div id="mood-label">Neutral</div>
+      <label>Severity:<input type="range" id="severity" min="1" max="10" value="5"></label>
+      <div id="severity-label">5</div>
+      <button type="submit">Submit Grievance</button>
+    </form>
+    <div id="thank-you" class="hidden">
+      <p>Thank you, Marian. Your grievance has been received and is under emotional review by Doms.</p>
+      <button id="new">Submit Another</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
