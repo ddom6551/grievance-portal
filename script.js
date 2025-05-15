@@ -23,7 +23,7 @@ form.addEventListener('submit', e => {
     severity: severityInput.value,
     timestamp: new Date().toLocaleString()
   };
-  fetch('FILL_WEB_APP_URL_HERE', {
+  fetch('https://script.google.com/macros/s/AKfycbzCScHdC9A89s6sbf5en8SCjfspdM9mlnNWMn9_LjqkgJqPGoOgYEk1fomBJsZebKxjVg/exec', {
     method: 'POST',
     mode: 'no-cors',
     headers: { 'Content-Type': 'application/json' },
